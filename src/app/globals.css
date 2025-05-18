@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #000;
+  background: #22212c;
+  font-family: "Unbounded", serif;
+}
+
+h1 {
+  font-size: clamp(40px, 4vw, 128px);
+  font-weight: 700;
+  line-height: normal;
+}
+.custom-list li::marker {
+  color: #ff4392; /* Pink color */
+}
+h2 {
+  color: #1b1b29;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 600;
+  text-align: start;
+}
+
+button {
+  max-width: 273px;
+  height: 52px;
+
+  color: #fff;
+  border-radius: 20px;
+}
+.text-container {
+  white-space: pre-wrap;
+}
+
+.prose p {
+  margin-bottom: 8px;
+}
+.prose h2 {
+  margin-bottom: 14px;
+  line-height: 32px;
+}
+.prose ol p {
+  margin-bottom: 4px;
+}
+
+.resizable {
+  resize: vertical;
+  overflow: auto;
+}
+
+/* TipTap Editor Styles */
+.ProseMirror {
+  min-height: 200px;
+  padding: 1rem;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror p {
+  margin: 0.5rem 0;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProseMirror a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Добавим поддержку выравнивания */
+.ProseMirror[data-text-align="left"] {
+  text-align: left;
+}
+.ProseMirror[data-text-align="center"] {
+  text-align: center;
+}
+.ProseMirror[data-text-align="right"] {
+  text-align: right;
+}
+.ProseMirror[data-text-align="justify"] {
+  text-align: justify;
+}
+
+/* styles.css или глобальные стили */
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.breadcrumb-black-text {
+  color: black;
+}
+
+li {
+  padding-bottom: 4px;
+}
+
+ol li {
+  padding-left: 12px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
+.background-block {
+  background-image: url("/icons/block1.webp");
+  background-size: cover; /* This will scale the image to cover the entire block */
+  background-position: center; /* This will center the image */
+  background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the tracking area */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff4392; /* Color of the scroll thumb */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e0398a; /* Color of the scroll thumb on hover */
+}
